@@ -1,0 +1,203 @@
+import { StyleSheet } from 'react-native';
+import AppColor from '../../../helpers/AppColor';
+import { PopinsFont } from '../../../helpers/Fonts';
+const styles = StyleSheet.create({
+  Container: {
+    flex: 1,
+    backgroundColor: 'transparent',
+  },
+  scroll: {
+    flex: 1,
+    backgroundColor: 'transparent',
+    top: Platform.OS === 'ios' ? 40 : 0,
+  },
+  curvedView: {
+    backgroundColor: AppColor.white,
+    alignSelf: 'flex-end',
+    flexDirection: 'row',
+    gap: 10,
+    // marginHorizontal: 20,
+    alignItems: 'center',
+  },
+  welcomeBackText: {
+    color: AppColor.black,
+    fontSize: 14,
+    textAlign: 'left',
+    fontFamily: PopinsFont.semiBold,
+    textDecorationLine: 'underline',
+  },
+  signInText: {
+    color: AppColor.black,
+    fontSize: 14,
+    textAlign: 'left',
+    fontFamily: PopinsFont.semiBold,
+  },
+  centerView: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'transparent',
+    marginTop: 70,
+  },
+  fixerliImage: { height: 80, width: 80, marginVertical: 20 },
+  welcomeText: {
+    textAlign: 'center',
+    color: '#151515',
+    fontSize: 26,
+    marginLeft: 20,
+    fontFamily: PopinsFont.medium,
+    marginBottom: 10,
+  },
+  emailContainer: {
+    width: '100%',
+    justifyContent: 'center',
+    alignItems: 'center',
+    alignSelf: 'center',
+  },
+  emailInput: {
+    height: 52,
+    paddingHorizontal: 12,
+    width: '100%',
+    alignSelf: 'center',
+    marginVertical: 10,
+    fontFamily: PopinsFont.regular,
+    color: '#726666',
+    fontSize: 15,
+    borderWidth: 1,
+    borderColor: AppColor.white,
+    textAlign: 'left',
+    justifyContent: 'center',
+    paddingHorizontal: 10,
+    backgroundColor: AppColor.white,
+    borderRadius: 10,
+  },
+  passwordContainer: {
+    width: '100%',
+    alignSelf: 'center',
+    marginVertical: 10,
+    flexDirection: 'row',
+    alignItems: 'center',
+    borderRadius: 6,
+    borderWidth: 1,
+    borderColor: AppColor.white,
+    backgroundColor: AppColor.white,
+    borderRadius: 10,
+  },
+
+  passwordInput: {
+    flex: 1,
+    height: 52,
+    paddingHorizontal: 12,
+    fontFamily: PopinsFont.regular,
+    color: '#726666',
+    fontSize: 15,
+  },
+
+  eyeButton: {
+    paddingHorizontal: 12,
+  },
+
+  orText: {
+    textAlign: 'center',
+    fontSize: 14,
+    fontFamily: PopinsFont.medium,
+    color: '#A6A6A6',
+    marginVertical: 20,
+  },
+  noAccount: {
+    color: AppColor.black,
+    fontSize: 14,
+    fontFamily: PopinsFont.regular,
+    marginVertical: 10,
+  },
+  createAccount: {
+    color: AppColor.black,
+    fontSize: 14,
+    fontFamily: PopinsFont.semiBold,
+    marginVertical: 10,
+  },
+
+  forgetContainer: {
+    width: '80%',
+    paddingVertical: 10,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    alignSelf: 'center',
+  },
+
+  forgetView: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    top: -5,
+  },
+  forgetPassowrd: {
+    color: '#4E4E4E',
+    fontSize: 15,
+    fontFamily: PopinsFont.regular,
+    textAlign: 'right',
+  },
+
+  bottomView: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: 5,
+  },
+
+  endView: {
+    flexDirection: 'row',
+    marginVertical: 20,
+    alignItems: 'center',
+    backgroundColor: AppColor.white,
+    gap: 5,
+  },
+  loaderButton: {
+    backgroundColor: AppColor.primaryBlue,
+    width: '100%',
+    height: 44,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 12,
+    marginTop: 10,
+  },
+  loaderContainer: { justifyContent: 'center', alignItems: 'center' },
+  icon: { height: 25, width: 25 },
+  fullImage: {
+    height: '100%',
+    width: '100%',
+  },
+  mainView: {
+    borderWidth: 1,
+    backgroundColor: '#F7F7F7',
+    borderColor: '#E1E1E1',
+    width: '90%',
+    alignSelf: 'center',
+    paddingTop: 12,
+    paddingLeft: 8,
+    paddingRight: 8,
+    paddingBottom: 8,
+    borderRadius: 20,
+  },
+  text: {
+    textAlign: 'left',
+    alignSelf: 'flex-start',
+    fontFamily: PopinsFont.regular,
+    fontSize: 14,
+    color: '#2A2A2A',
+    marginLeft: 5,
+  },
+  bottomView1: { marginVertical: 30, alignSelf: 'center' },
+  bottomView2: { flexDirection: 'row', alignItems: 'center' },
+  text1: {
+    textAlign: 'center',
+    fontSize: 12,
+    fontFamily: PopinsFont.regular,
+    color: '#888888',
+  },
+  touchText: {
+    textAlign: 'center',
+    fontSize: 12,
+    fontFamily: PopinsFont.regular,
+    color: '#888888',
+  },
+});
+export default styles;

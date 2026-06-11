@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "87666115597",
+    "project_id": "fixrli-ee4e8",
+    "storage_bucket": "fixrli-ee4e8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:87666115597:android:e5fde1d6c26b6379828144",
+        "android_client_info": {
+          "package_name": "com.fixrli"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "87666115597-727mfmh81om52ja5f4eg6t4tsrdk0pea.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fixrli",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "87666115597-fikgj5gsgiv0de0qs81o3tj8gpmcga40.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fixrli",
+            "certificate_hash": "11e89dd771c1f039a52c9afe96b2d480e8c65da0"
+          }
+        },
+        {
+          "client_id": "87666115597-vbo3l1knnggvo51bsos4k95dkm8isjmg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fixrli",
+            "certificate_hash": "25d47ffcf557b8e322615ce30b8b25ca4a84738b"
+          }
+        },
+        {
+          "client_id": "87666115597-n9a3ivfun8i7gbv9ebr3pp7e64d825a2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVnylwGd4nuIRMnhNjdsBFPAMS1frBXwk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "87666115597-n9a3ivfun8i7gbv9ebr3pp7e64d825a2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
