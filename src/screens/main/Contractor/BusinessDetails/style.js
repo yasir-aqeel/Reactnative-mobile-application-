@@ -1,0 +1,190 @@
+import { StyleSheet, Platform, Dimensions } from 'react-native';
+import { PopinsFont } from '../../../../helpers/Fonts';
+import { FontSizes, Spacing } from '../../../../helpers/sizeHelper';
+const { width, height } = Dimensions.get('window');
+const MAP_HEIGHT = height * 0.35;
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#FFFFFF',
+  },
+  contentContainer: {
+    paddingHorizontal: 16,
+  },
+  mainView: {
+    backgroundColor: '#F1F1F1',
+    alignSelf: 'center',
+    padding: Spacing.s,
+    borderRadius: Spacing.s,
+    marginBottom: 8,
+  },
+
+  subheading: {
+    textAlign: 'left',
+    fontFamily: PopinsFont.medium,
+    fontSize: FontSizes.m,
+    color: '#2A2A2A',
+    lineHeight: Spacing.xl,
+    marginBottom: 8,
+  },
+  subDescription: {
+    fontSize: FontSizes.s,
+    color: '#6A6A6A',
+    marginBottom: 18,
+    fontFamily: PopinsFont.regular,
+    lineHeight: Spacing.l,
+  },
+  autocompleteContainer: {
+    zIndex: 10,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    backgroundColor: '#FFFFFF',
+    borderRadius: 10,
+    zIndex: 99999,
+  },
+  searchInput: {
+    height: 50,
+    paddingHorizontal: 10,
+    paddingTop: 10,
+    fontSize: 16,
+    backgroundColor: '#FFFFFF',
+    color: '#6A6A6A',
+    fontFamily: PopinsFont.regular,
+    textAlignVertical: 'center',
+    textAlign: 'left',
+  },
+  listView: {
+    marginTop: 4,
+    backgroundColor: '#FFF',
+    zIndex: 9999,
+  },
+  row: {
+    paddingHorizontal: 16,
+    paddingVertical: 12,
+  },
+  separator: {
+    height: 1,
+    backgroundColor: 'transparent',
+  },
+  mapContainer: {
+    height: MAP_HEIGHT,
+    borderRadius: 10,
+    overflow: 'hidden',
+    position: 'relative',
+    borderWidth: 1,
+    borderColor: '#E0E0E0',
+    marginTop: 10,
+    marginBottom: 2,
+  },
+  map: {
+    ...StyleSheet.absoluteFillObject,
+  },
+  mapControls: {
+    position: 'absolute',
+    right: 12,
+    top: 12,
+    alignItems: 'center',
+    backgroundColor: '#FFF',
+    borderRadius: 8,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    elevation: 3,
+    height: 120,
+    width: 40,
+    justifyContent: 'center',
+  },
+
+  pinButton: {
+    width: 40,
+    height: 40,
+    justifyContent: 'center',
+    alignItems: 'center',
+    top: 8,
+  },
+  controlButton: {
+    width: 40,
+    height: 60,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+
+  verified: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginVertical: 12,
+  },
+  cover: {
+    height: 102,
+    borderRadius: 12,
+  },
+  inputContainer: {
+    zIndex: 10,
+    backgroundColor: '#FFFFFF',
+    borderRadius: Spacing.s,
+    alignItems: 'center',
+    paddingHorizontal: 5,
+    overflow: 'hidden',
+    marginBottom: 12,
+  },
+  textInput: {
+    height: Spacing.xl6,
+    fontSize: FontSizes.s,
+    color: '#6A6A6A',
+    fontFamily: PopinsFont.regular,
+    textAlign: 'left',
+    width: '100%',
+  },
+  text: {
+    color: '#6A6A6A',
+    fontFamily: PopinsFont.regular,
+    fontSize: 14,
+    marginBottom: 5,
+    lineHeight: Spacing.l,
+  },
+  logoContainer: {
+    flexDirection: 'row',
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    gap: 5,
+  },
+  logoImageContainer: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    height: 104,
+    width: 103,
+    backgroundColor: '#FFFFFF',
+    borderColor: '#E1E1E1',
+    borderWidth: 1,
+  },
+  uploadButtonContainer: {
+    flex: 1,
+  },
+  bottomView: {
+    backgroundColor: '#F1F1F1',
+    alignSelf: 'center',
+    padding: 10,
+    borderRadius: Spacing.s,
+  },
+  logoImage: {
+    height: 104,
+    width: 103,
+  },
+  button: {
+    alignSelf: 'center',
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: '97%',
+    backgroundColor: '#FFF',
+    borderColor: '#E1E1E1',
+    borderWidth: 1,
+    borderTopLeftRadius: Spacing.s,
+    borderTopRightRadius: Spacing.s,
+    paddingVertical: Spacing.s,
+    paddingHorizontal: Spacing.l,
+    flexDirection: 'row',
+    gap: 10,
+  },
+});
+export default styles;

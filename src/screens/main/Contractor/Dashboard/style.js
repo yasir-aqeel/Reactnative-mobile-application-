@@ -1,0 +1,222 @@
+import { StyleSheet } from 'react-native';
+import { PopinsFont } from '../../../../helpers/Fonts';
+import AppColor from '../../../../helpers/AppColor';
+import { Spacing, FontSizes } from '../../../../helpers/sizeHelper';
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: AppColor.white,
+  },
+  greeting: {
+    fontSize: FontSizes.xl3,
+    fontFamily: PopinsFont.medium,
+    color: AppColor.black,
+    lineHeight: Spacing.xl3,
+    paddingLeft: 10,
+  },
+
+  title: {
+    fontSize: FontSizes.s,
+    paddingLeft: 20,
+    fontFamily: PopinsFont.medium,
+    lineHeight: FontSizes.l,
+    marginTop: 10,
+  },
+  actionCard: {
+    marginVertical: 5,
+  },
+  actionImage: {
+    width: 90,
+    height: 90,
+    borderRadius: 16,
+    marginRight: 14,
+  },
+
+  secondaryBtn: {
+    marginTop: 8,
+    backgroundColor: '#FFFFFF',
+    paddingVertical: 8,
+    paddingHorizontal: 18,
+    borderRadius: 20,
+    alignSelf: 'flex-start',
+  },
+
+  secondaryBtnText: {
+    fontWeight: '600',
+  },
+  scrollToTopButton: {
+    position: 'absolute',
+    bottom: 30,
+    right: 30,
+    backgroundColor: '#FFF',
+    borderRadius: 25,
+    padding: 10,
+    justifyContent: 'center',
+    alignItems: 'center',
+    elevation: 3,
+    borderRadius: 100,
+    padding: 10,
+  },
+  flatlistContainer: {
+    backgroundColor: '#FFF',
+    flex: 1,
+    position: 'relative',
+  },
+  noRecord: {
+    fontFamily: PopinsFont.bold,
+    fontSize: 16,
+    color: AppColor.textLight1,
+  },
+  noText: {
+    fontFamily: PopinsFont.regular,
+    fontSize: 14,
+    color: AppColor.textLight2,
+  },
+  pagination: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  dot: {
+    width: 6,
+    height: 6,
+    borderRadius: 3,
+    backgroundColor: '#C4C4C4',
+    marginHorizontal: 4,
+  },
+  activeDot: {
+    backgroundColor: '#009FD9',
+    width: 20,
+    height: 8,
+    borderRadius: 4,
+  },
+  headerContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    width: '95%',
+    alignSelf: 'center',
+    backgroundColor: AppColor.white,
+    marginBottom: 10,
+  },
+  greetingContainer: {
+    alignItems: 'flex-start',
+    justifyContent: 'center',
+    width: '70%',
+  },
+  filterContainer: {
+    alignItems: 'flex-end',
+    justifyContent: 'center',
+    alignSelf: 'center',
+    // width: '30%',
+    right: 15,
+  },
+  filterView: {
+    backgroundColor: '#FFFFFF',
+    height: 44,
+    // width: 125,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    gap: 5,
+    borderColor: '#E1E1E1',
+    borderWidth: 1,
+    borderRadius: Spacing.s,
+    padding: Spacing.s,
+    alignItems: 'center',
+  },
+  filterText: {
+    color: '#2A2A2A',
+    fontSize: FontSizes.s,
+    fontFamily: PopinsFont.medium,
+    lineHeight: Spacing.l,
+    textAlign: 'left',
+  },
+  icon: { height: 15, width: 15 },
+  statsView: {
+    backgroundColor: '#F1F1F1',
+    borderWidth: 1,
+    borderColor: '#E1E1E1',
+    borderRadius: 10,
+    width: '90%',
+    alignSelf: 'center',
+    paddingHorizontal: 5,
+    paddingVertical: 10,
+  },
+  statsContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    gap: 10,
+  },
+  innerView: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    gap: 10,
+  },
+
+  flatlistView: {
+    flex: 1,
+    backgroundColor: '#F1F1F1',
+    borderTopLeftRadius: Spacing.xl,
+    borderTopRightRadius: Spacing.xl,
+    padding: Spacing.l,
+  },
+  headingText: {
+    fontFamily: PopinsFont.medium,
+    fontSize: FontSizes.s,
+    lineHeight: Spacing.l,
+    color: AppColor.textColor,
+    marginLeft: 5,
+    marginBottom: 12,
+  },
+  flatlist: {
+    flex: 1,
+    position: 'relative',
+  },
+  footer: {
+    backgroundColor: '#FFFFFF',
+    paddingVertical: 10,
+    paddingHorizontal: 15,
+    borderRadius: 100,
+    justifyContent: 'center',
+    alignItems: 'center',
+    alignSelf: 'center',
+    marginVertical: 10,
+  },
+  footerText: {
+    color: '#6A6A6A',
+    fontFamily: PopinsFont.regular,
+    fontSize: FontSizes.s,
+    lineHeight: FontSizes.l,
+  },
+  quickView: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    paddingTop: 10,
+  },
+  quickText: {
+    fontFamily: PopinsFont.medium,
+    color: AppColor.textColor,
+    fontSize: FontSizes.s,
+    lineHeight: FontSizes.l,
+  },
+  tabView: { marginVertical: 10 },
+  tabContainer: {
+    flexDirection: 'row',
+    paddingHorizontal: 15,
+  },
+  emptyView: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    alignSelf: 'center',
+    gap: 10,
+    height: 300,
+    width: '100%',
+  },
+  text: {
+    color: '#6A6A6A',
+    fontFamily: PopinsFont.regular,
+    fontSize: FontSizes.s,
+    lineHeight: Spacing.l,
+    textAlign: 'center',
+  },
+});
+export default styles;
