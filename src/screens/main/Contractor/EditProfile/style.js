@@ -1,0 +1,193 @@
+import { StyleSheet } from 'react-native';
+import AppColor from '../../../../helpers/AppColor';
+import { PopinsFont } from '../../../../helpers/Fonts';
+import sizeHelper, { FontSizes, Spacing } from '../../../../helpers/sizeHelper';
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: AppColor.white,
+  },
+  infoContainer: {
+    backgroundColor: AppColor.white,
+  },
+  contentContainer: {
+    paddingBottom: 20,
+  },
+  button: {
+    alignSelf: 'center',
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: '97%',
+    backgroundColor: '#FFF',
+    borderColor: '#E1E1E1',
+    borderWidth: 1,
+    borderTopLeftRadius: Spacing.s,
+    borderTopRightRadius: Spacing.s,
+    paddingVertical: Spacing.s,
+    paddingHorizontal: Spacing.l,
+    flexDirection: 'row',
+    gap: 10,
+  },
+
+  coverWrapper: {
+    width: '100%',
+    alignItems: 'center',
+  },
+
+  coverImage: {
+    height: 165,
+    width: '92%',
+    borderRadius: Spacing.l,
+    overflow: 'hidden',
+  },
+
+  profileContainer: {
+    position: 'absolute',
+    bottom: -30,
+    height: 115,
+    width: 115,
+    borderRadius: 100,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderWidth: 4,
+    borderColor: '#fff',
+    zIndex: 10,
+    alignSelf: 'center',
+    backgroundColor: AppColor.primaryBlue,
+  },
+
+  userName: {
+    color: '#FFF',
+    fontSize: 35,
+    fontFamily: PopinsFont.medium,
+    lineHeight: Spacing.xl,
+  },
+  profile: {
+    height: 110,
+    width: 110,
+    borderRadius: 100,
+    alignSelf: 'center',
+  },
+
+  sideIcon: { height: 16, width: 16 },
+  buttonView: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 10,
+    justifyContent: 'center',
+    marginTop: 45,
+    marginBottom: 20,
+  },
+  nameContainer: {
+    backgroundColor: '#F1F1F1',
+    borderRadius: Spacing.l,
+    padding: Spacing.xs,
+    marginBottom: 12,
+  },
+  nameRow: {
+    padding: Spacing.s,
+    backgroundColor: '#FFFFFF',
+    height: Spacing.xl6,
+    borderRadius: Spacing.s,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 8,
+    overflow: 'hidden',
+  },
+  text: {
+    color: '#6A6A6A',
+    fontFamily: PopinsFont.regular,
+    fontSize: FontSizes.s,
+    textAlign: 'left',
+  },
+  textHelp: {
+    color: '#6A6A6A',
+    fontFamily: PopinsFont.regular,
+    fontSize: FontSizes.s,
+    textAlign: 'left',
+    marginBottom: 12,
+  },
+  textName: {
+    color: '#2A2A2A',
+    fontFamily: PopinsFont.medium,
+    fontSize: FontSizes.m,
+    lineHeight: Spacing.xl,
+    marginBottom: 8,
+  },
+  roleText: {
+    color: '#6A6A6A',
+    fontFamily: PopinsFont.medium,
+    fontSize: FontSizes.xs,
+    lineHeight: Spacing.l,
+    marginBottom: 12,
+  },
+  bottomView: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    backgroundColor: '#F1F1F1',
+    borderColor: '#E1E1E1',
+    borderWidth: 1,
+    borderRadius: Spacing.xl5,
+    height: Spacing.xl7,
+    padding: Spacing.xxs,
+    marginBottom: 20,
+  },
+  touchButton: {
+    height: Spacing.xl6,
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: '50%',
+    borderRadius: Spacing.xl5,
+  },
+  textTouch: {
+    fontFamily: PopinsFont.regular,
+    fontSize: 16,
+    lineHeight: Spacing.xl,
+  },
+  roleContainer: {
+    backgroundColor: '#F1F1F1',
+    borderRadius: Spacing.l,
+    padding: Spacing.xs,
+    marginBottom: 12,
+  },
+  roleRow: {
+    justifyContent: 'center',
+    padding: Spacing.s,
+    height: Spacing.xl6,
+    borderRadius: Spacing.s,
+  },
+  iconRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+  },
+  roleName: {
+    fontFamily: PopinsFont.regular,
+    fontSize: FontSizes.s,
+    textAlign: 'left',
+  },
+  inputContainer: {
+    backgroundColor: '#F1F1F1',
+    borderRadius: Spacing.l,
+    padding: Spacing.xs,
+    marginBottom: 12,
+    justifyContent: 'center',
+  },
+  input: {
+    width: '90%',
+    alignSelf: 'center',
+    fontFamily: PopinsFont.regular,
+    color: '#726666',
+    fontSize: FontSizes.s,
+    textAlign: 'left',
+    justifyContent: 'center',
+    paddingHorizontal: 5,
+    padding: Spacing.s,
+    backgroundColor: '#FFFFFF',
+    height: 50,
+    borderRadius: Spacing.s,
+  },
+});
+export default styles;
